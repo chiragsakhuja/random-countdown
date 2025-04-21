@@ -61,6 +61,23 @@
             font-size: 14px;
             color: #333;
         }
+
+
+        #bell {
+            margin-top: 20px;
+            font-size: 50px;
+            text-align: center;
+            display: none; /* Initially hidden */
+            animation: shake 0.5s ease-in-out infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(-15deg); }
+            50% { transform: rotate(15deg); }
+            75% { transform: rotate(-15deg); }
+            100% { transform: rotate(0deg); }
+        }
     </style>
 
     <script defer src="scripts/random-countdown.js"></script>
@@ -75,6 +92,7 @@
         </div>
         <button id="startButton">Start Timer</button>
         <div id="message" class="message"></div>
+        <div id="bell">🔔</div>
     </div>
 </body>
 
