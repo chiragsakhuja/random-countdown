@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Countdown Timer</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            margin: 20px auto; /* Add some space from the top */
+            padding: 20px;
+            width: 90vh;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center elements horizontally */
+            justify-content: center; /* Center elements vertically */
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center; /* Vertically align labels and inputs */
+            justify-content: center; /* Horizontally center the input group */
+            gap: 5px; /* Reduce the space between elements */
+            margin: 15px 0;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            white-space: nowrap; /* Prevent labels from wrapping */
+        }
+
+        .input-group input {
+            width: 80px; /* Keep the input fields 30px wide */
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        #startButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #startButton:hover {
+            background-color: #0056b3;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+
+    <script defer src="scripts/random-countdown.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Random Countdown Timer</h1>
+        <div class="input-group">
+            <input type="number" id="minTime" required placeholder="Min (s)">
+            <input type="number" id="maxTime" required placeholder="Max (s)">
+        </div>
+        <button id="startButton">Start Timer</button>
+        <div id="message" class="message"></div>
+    </div>
+</body>
+
+</html>
