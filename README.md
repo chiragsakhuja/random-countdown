@@ -32,10 +32,3 @@ This project is compatible with modern web browsers that support HTML5, CSS3, an
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## Future Enhancements
-
-- Add a pause/resume functionality for the timer.
-- Allow users to upload custom alarm sounds.
-- Provide a visual countdown timer display.
-- Add support for mobile-friendly design.
